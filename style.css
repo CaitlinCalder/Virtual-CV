@@ -7,13 +7,22 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #f9f7fe 0%, #e6f3ff 100%);
+  background: linear-gradient(135deg, #e9edee 0%, #eaeaea 100%);
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+.emoji {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
 p {
     color: rgb(85,85,85);
 }
