@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Virtual CV</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class ="logo">Caitlin Calder</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href = "#about">About me<a/></li>
+                <li><a href = "#skills">Technical skills<a/></li>
+                <li><a href = "#education">Education<a/></li>   
+                <li><a href = "#projects">Projects<a/></li>
+                <li><a href = "#contact">Contact me<a/></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <div class="logo">Caitlin Calder</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links" id="menuLinks">
+        <li><a href="#about" onclick="toggleMenu()">About me</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Technical skills</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact me</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id = "profile">
+    <div class = "section__pic-container">
+        <img src = "assets/profile-pic.png" alt = "My profile picture"
+    </div>
+    <div class = "section_text">
+        <p class="section_text_p1">Hi! I'm</p>
+        <h1 class = "title">Caitlin Calder</h1>
+        <p class = "section_text_p2">Final Year BSc Information Technology Student</p>
+        <div class ="btn-container">
+            <button 
+            class = "btn btn-color-2" 
+            onclick = "window.open('./assets/Caitlin-Resume.pdf')">download my CV</button>
+                    <button 
+            class = "btn btn-color-1" 
+            onclick = "location.href ='./#contact'">Contact me</button>
+        </div>
+        <div id = "socials-container">
+            <img 
+            src = "./assets/linkedin.png" 
+            alt = "My LinkedIn Profile" 
+            class = "icon" 
+            onclick="location.href = 'https://linkedin.com/'"
+            />
+            <img 
+            src = "./assets/github.png" 
+            alt = "My GitHub Profile" 
+            class = "icon" 
+            onclick="location.href = 'https://github.com/CaitlinCalder'"
+            />
+
+        </div>
+    </div>
+  </section>
+   <script src="script.js"></script>
+</body>
+</html>
