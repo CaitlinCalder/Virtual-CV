@@ -345,3 +345,58 @@ details summary {
   background: pink;
   border-radius: 50px;
 }
+
+.projects-container {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  flex-wrap: wrap; /* Responsive wrap on smaller screens */
+}
+
+.project {
+  max-width: 300px;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(204, 102, 153, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+}
+
+.project p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.projects-container, 
+.project {
+  text-align: left; 
+}
+
+.coming-soon {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #cc6699;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    color: #cc6699;
+  }
+  50% {
+    color: #e399d2;
+  }
+}
