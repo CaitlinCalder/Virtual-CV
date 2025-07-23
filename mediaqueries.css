@@ -5,8 +5,14 @@
     #hamburger-nav {
         display:flex;
     }
-    #profile,
-  .section-container {
-    display: block;
+  @media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    gap: 2rem;
   }
+
+  .section__text {
+    text-align: center;
+  }
+}
 }

@@ -41,82 +41,47 @@
       </div>
     </div>
   </nav>
-  <section id = "profile">
-    <div class="profile-container">
-        <div class = "section__pic-container">
-            <img src = "assets/profile-pic.png" alt = "My profile picture"/>
-        </div>
-        <div class = "section_text">
-            <p class="section__text__p1">Hi! I'm</p>
-            <h1 class = "title">Caitlin Calder</h1>
-            <p class = "section__text__p2">Final Year BSc Information Technology Student</p>
-        <div class ="btn-container">
-            <button 
-            class = "btn btn-color-2" 
-            onclick = "window.open('./assets/Caitlin-Resume.pdf')">download my CV</button>
-                    <button 
-            class = "btn btn-color-1" 
-            onclick = "location.href ='./#contact'">Contact me</button>
-        </div>
-        <div id = "socials-container">
-            <img 
-            src = "./assets/linkedin.png" 
-            alt = "My LinkedIn Profile" 
-            class = "icon" 
-            onclick="location.href = 'https://linkedin.com/'"
-            />
-            <img 
-            src = "./assets/github.png" 
-            alt = "My GitHub Profile" 
-            class = "icon" 
-            onclick="location.href = 'https://github.com/CaitlinCalder'"
-            />
-            </div>
-        </div>
+<section id="profile">
+  <div class="profile-container">
+    <div class="section__pic-container">
+      <img src="assets/profile-pic.png" alt="My profile picture" />
     </div>
-  </section>
-  <style>
-  #about {
-    background: #fff0f6; /* soft pastel pink */
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(204, 102, 153, 0.2);
-    max-width: 700px;
-    margin: 2rem auto;
-    color: pink;
-    transition: box-shadow 0.3s ease;
-  }
-  strong {
-    color: #b34778;
-  }
-</style>
-<style>
-  #skills
-  {
-    color: pink;
-  }
-</style>
+    <div class="section__text">
+      <p class="section__text__p1">Hi! I'm</p>
+      <h1 class="title">Caitlin Calder</h1>
+      <p class="section__text__p2">Final Year BSc Information Technology Student</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Caitlin-Resume.pdf')">My Resume</button>
+        <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact me</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href = 'https://linkedin.com/'" />
+        <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href = 'https://github.com/CaitlinCalder'" />
+      </div>
+    </div>
+  </div>
+</section>
 
   <section id="about"> 
   <h1 class="title">About Me</h1>
     <p>
     I'm a final-year student at North-West University, majoring in <em>Artificial Intelligence</em>, <em>Databases</em>, <em>Decision Support Systems</em>, <em>Computer Networks</em>, and <em>Operating Systems</em>. I'm also proud to be an <strong>Amazon Bursary Recipient</strong> for the year 2025.
     </p>
-    <br><br>
+    <br>
     <p>
-    <span class="emoji">💡</span> I'm currently exploring the exciting world of <strong>Artificial Intelligence</strong> and <strong>Machine Learning</strong>, with a passion for building smarter, more intuitive systems.
-    <span class="emoji">🤝</span> I'm actively seeking <strong>collaboration</strong>, mentorship, and opportunities to gain real-world experience across various spheres of IT—so I can discover where my skills and passions align most effectively.
-    <span class="emoji">🛠️</span> I thrive in project-driven environments and believe in continuous growth through curiosity, innovation, and community.
+    <p><span class="emoji">💡</span> I'm currently exploring the exciting world of <strong>Artificial Intelligence</strong> and <strong>Machine Learning</strong>, with a passion for building smarter, more intuitive systems.</p>
+    <p><span class="emoji">🤝</span> I'm actively seeking <strong>collaboration</strong>, mentorship, and opportunities to gain real-world experience across various spheres of IT—so I can discover where my skills and passions align most effectively.</p>
+    <p><span class="emoji">🛠️</span> I thrive in project-driven environments and believe in continuous growth through curiosity, innovation, and community.</p>
     </p>
-    <br><br>
+    <br>
     <p>
-    Whether I’m designing user-friendly applications, simplifying technical concepts, or improving system performance, I approach every challenge with a detail-oriented mindset and a collaborative spirit.
+    I plan to continue my studies into honours next year to deepen my knowledge and gain greater clarity on my evolving interests, which I aspire to pursue in the industry.
     </p>
-    <br><br>
+    <br>
     <p>
     Outside of coding, I love creating and sharing helpful resources, staying ahead with the latest in tech, and encouraging others on their own learning journeys.
     </p>
-
+    <br>
     <p style="font-style: italic; color: #cc6699;">
     Let’s build something impactful together—I'm always open to new ideas and experiences!
     </p>
@@ -313,11 +278,14 @@
     <p><strong>Average for Year 3 (so far):</strong> 82%</p>
   </details>
   <h3> Achievements</h3>
-<ul>
-  <li>🎓 Amazon Bursary Recipient for the year <strong>2025</strong></li>  
-  <li>🌟 Golden Key Honour Society Member since <strong>2024</strong> – 
+<ul class="achievements-list">
+  <li class="achievement">
+    🎓 <strong>Amazon Bursary Recipient</strong> for the year <strong>2025</strong>
+  </li>
+  <li class="achievement">
+    🌟 <strong>Golden Key Honour Society Member</strong> since <strong>2024</strong> – 
     <a href="https://www.goldenkey.org" target="_blank" rel="noopener noreferrer">Link to Certificate</a>
-  </li>  
+  </li>
 </ul>
 </section>
 
@@ -326,48 +294,35 @@
   <div class="projects-container">
     <div class="project">
       <img src="assets/project-1.png" alt="Project 1 Screenshot" />
-      <p>This system manages core hotel operations including bookings, check-ins/outs, room & guest management, employee access control, and multilingual support.</p>
-      <p><strong>Key Features:</strong></p>
-      <ul>
-        <li>User authentication with role-based access (Admin, Clerk)</li>
-        <li>Employee management with auto-generated usernames & passwords</li>
-        <li>Booking system with search and auto-fill functionalities</li>
-        <li>Report generation, multilingual toggle (English/Afrikaans), and integrated help system</li>
-        <li>Strong input validation and a clean, user-friendly interface</li>
-      </ul>
-      <p><em>Technologies used:</em> C# (.NET Windows Forms), Microsoft SQL Server, Visual Studio, SSMS.</p>
-      <a href = "https://github.com/Hotel-Management-System-Group-22/CMPG223_Group22" class "btn btn-color-1"target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <p class ="project-desc">This system manages core hotel operations including bookings, check-ins/outs, room & guest management, employee access control, and multilingual support.</p>
+      <div class = "btn-container">
+      <a href = "https://github.com/Hotel-Management-System-Group-22/CMPG223_Group22" class="btn btn-color-2" target="_blank">View on GitHub</a>
+      </div>
     </div>
 
     <div class="project">
       <img src="assets/project-2.png" alt="Project 2 Screenshot" />
-      <p>A group project designing and simulating a secure, scalable office network using Cisco Packet Tracer.</p>
-      <p>The network features a star topology connecting core and access switches, VLAN segmentation for department isolation, ACLs for access control, and DHCP deployment for IP management.</p>
-      <p><strong>Highlights:</strong></p>
-      <ul>
-        <li>Star topology with two core switches interconnected via trunk links</li>
-        <li>VLANs configured for offices, kitchen, meeting rooms, guest Wi-Fi, and more</li>
-        <li>ACLs enforcing strict communication control between VLANs</li>
-        <li>Central DHCP server with helper addresses to assign IPs across VLANs</li>
-        <li>Emulated VPN setup for secure remote access</li>
-      </ul>
-      <p><em>Tools used:</em> Cisco Packet Tracer (v8.2+), VLAN design, router-on-a-stick, ACL implementation, DHCP configuration.</p>
-      <a href = "https://github.com/CaitlinCalder/Office-Network-Design" class "btn btn-color-1"target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <p class ="project-desc">This project involved the designing and simulating of a secure, scalable office network using Cisco Packet Tracer.The network features a star topology focusing on VLAN segmentation for department isolation, ACLs for access control, and DHCP deployment for IP management.</p>
+      <div class = "btn-container">
+      <a href = "https://github.com/CaitlinCalder/Office-Network-Design" class="btn btn-color-2" target="_blank">View on GitHub</a>
     </div>
   </div>
   <p class="coming-soon">Stay tuned for some exciting projects that are brewing!</p>
+  
 </section>
 <section id="contact">
   <h1 class="title">Contact Me</h1>
   <p style="text-align:center; max-width: 400px; margin: 1rem auto 2rem auto; color: rgb(85,85,85); font-weight: 500;">
     Feel free to reach out via email or connect with me on LinkedIn!
   </p>
-  <div class="btn-container" style="justify-content: center;">
-    <a href="mailto:your.email@example.com" class="btn btn-color-1" target="_blank" rel="noopener noreferrer">
-      📧 Email Me
+  <div class ="contact-container">
+      <a href="https://www.linkedin.com/in/CaitlinCalder" target="_blank" rel="noopener noreferrer" class="contact-item">
+      <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" />
+      <span>LinkedIn</span>
     </a>
-    <a href="https://www.linkedin.com/in/yourprofile" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
-      💼 LinkedIn
+        <a href="mailto:caitlincalder@example.com" class="contact-item">
+      <img src="./assets/email.png" alt="Email Me" class="icon" />
+      <span>caitlincalderr@gmail.com</span>
     </a>
   </div>
 </section>
