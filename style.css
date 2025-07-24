@@ -4,6 +4,17 @@
     margin: 0;
     padding:0;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 1rem;
+}
 
 body {
   font-family: "Poppins", sans-serif;
